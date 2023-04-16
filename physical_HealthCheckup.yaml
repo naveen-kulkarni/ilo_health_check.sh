@@ -1,0 +1,10 @@
+---
+- hosts: all 
+  become: yes
+
+- name: Executing a script
+  hosts:  all
+  become: yes
+  tasks:
+     - name: Execute the script
+       shell: /home/s_linadmin/automation/ad_hoc/Linux_Physical_HealthCheckup/runpcheckweb.sh 
